@@ -7,3 +7,5 @@ My goal is to call a c function with a `void*` argument containing the pointer t
 I am getting the following warning after upgrading to swift 5
 
 'withUnsafeBytes' is deprecated: use `withUnsafeBytes<R>(_: (UnsafeRawBufferPointer) throws -> R) rethrows -> R` instead
+
+The real life project where this happened is here [fit-sdk-swift](https://github.com/roznet/fit-sdk-swift) and the file with the warning is line 62 of [RZFitFile/src/RZFitFile.swift](https://github.com/roznet/fit-sdk-swift/blob/master/RZFitFile/src/RZFitFile.swift)
